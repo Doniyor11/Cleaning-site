@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background: #f5f6f7 !important; */
+}
+
+html, body, header, .carousel {
+    height: 100%;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+    }
+}
+
+.carousel, .carousel .carousel-inner, .carousel .carousel-inner .active, .carousel .carousel-inner .carousel-item, .view, body, html {
+    height: 100%
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.page-footer, .top-nav-collapse {
+    background-color: #1C2331
+}
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        background-color: #1C2331
+    }
+}
+
+/* menu ul */
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    font-size: 15px !important;
+}
+
+/* logo */
+
+.navbar-brand img {
+    width: 120px;
+    height: 50px;
+}
+
+/* card body strong */
+
+.card-body strong {
+    font-size: 15px;
+}
+
+/* clients */
+
+.fa-play:before {
+    margin-left: .3rem;
+}
+
+/* Steps */
+
+.step {
+    list-style: none;
+    margin: 0;
+}
+
+.step-element {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.step-number {
+    position: relative;
+    width: 7rem;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.step-number .number {
+    color: #bfc5ca;
+    background-color: #eaeff4;
+    font-size: 1.5rem;
+}
+
+.step-number .number {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    border-radius: 10rem;
+}
+
+.step-number::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 48px;
+    bottom: -2rem;
+    margin-left: -1px;
+    border-left: 2px dashed #eaeff4;
+}
+
+.step .step-element:last-child .step-number::before {
+    bottom: 1rem;
+}
+
+/* klient */
+
+.klient {
+    background-image: url(../img/preim-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 4rem !important;
+}
+
+/*  */
+
+.step-number .number {
+    color: #fff;
+    background-color: #3f51b5;
+    font-size: 1.5rem;
+}
+
+/* chasto zadavayem */
+
+.card-header {
+    padding: 1.90rem 1.25rem !important;
+    background-color: #fff !important;
+}
+
+.card-body {
+    padding: 1.90rem 1.25rem;
+}
+
+.card {
+    font-weight: 400;
+    border: 0;
+    -webkit-box-shadow:none !important;
+    box-shadow: none !important;
+}
+
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+button.close {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    padding-right: 1rem;
+    padding-top: .6rem;
+}
